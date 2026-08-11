@@ -218,8 +218,7 @@ The PCB design was checked using KiCad verification tools.
 
 ## 3D PCB View
 
-![ESP32-S3 IoT Board 3D View](Images/3d_view.png)
-
+<img width="1649" height="892" alt="Image" src="https://github.com/user-attachments/assets/e74863f6-4733-4d41-a355-170e553c2e58" />
 ---
 
 ## 🎯 Skills Demonstrated
