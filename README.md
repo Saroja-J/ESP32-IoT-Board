@@ -30,7 +30,7 @@ A custom IoT sensor board based on the **ESP32-S3-WROOM-1-N4**, designed in **Ki
               │                       │                       │
        ┌──────┼──────┐          ┌─────▼─────┐         ┌──────┴──────┐
        │      │      │          │  MicroSD  │         │             │
-    BME280  SHT40  SGP40       │   Card    │      MAX4466     Phototransistor
+    BME280  SHT40  SGP40        │   Card    │      MAX4466     Phototransistor
        │      │      │          └───────────┘         │             │
        └──────┴──────┘                                └─────────────┘
 ```
@@ -196,7 +196,6 @@ Gerber Generation
 - Decoupling capacitors
 - I²C routing
 - SPI routing
-- Analog signal routing
 - Signal integrity
 - Ground return paths
 - PCB manufacturability
@@ -217,58 +216,9 @@ The PCB design was checked using KiCad verification tools.
 
 ---
 
-## 📂 Repository Structure
-
-```text
-ESP32-S3-IoT-Board/
-│
-├── Hardware/
-│   ├── Schematic/
-│   ├── PCB/
-│   ├── Gerber/
-│   └── Datasheets/
-│
-├── Firmware/
-├── Documentation/
-├── Images/
-└── README.md
-```
-
----
-
-## 📸 Project Images
-
-### Schematic
-
-![ESP32-S3 IoT Board Schematic](Images/schematic.png)
-
-### PCB Layout
-
-![ESP32-S3 IoT Board PCB Layout](Images/pcb_layout.png)
-
-### 3D PCB View
+## 3D PCB View
 
 ![ESP32-S3 IoT Board 3D View](Images/3d_view.png)
-
----
-
-## 💻 Firmware
-
-Firmware can be developed using:
-
-- **ESP-IDF**
-- **Arduino IDE**
-
-### Planned Firmware Functions
-
-1. Sensor initialization
-2. I²C and SPI configuration
-3. Sensor data acquisition
-4. ADC sampling
-5. MicroSD data logging
-6. Data processing
-7. Wireless data transmission
-8. IoT monitoring
 
 ---
 
@@ -313,49 +263,25 @@ Firmware can be developed using:
 |------|---------|
 | **KiCad** | Schematic capture and PCB design |
 | **ESP-IDF** | ESP32-S3 firmware development |
-| **Arduino IDE** | Firmware development |
 | **GitHub** | Version control and documentation |
 
 ---
 
 ## 📚 Project Files
 
-The repository contains / can contain:
+The repository contains
 
 - KiCad schematic files
 - KiCad PCB files
 - Gerber files
 - Component datasheets
-- Firmware
 - PCB images
 - 3D PCB renders
 - Project documentation
 
 ---
 
-## ⭐ Project Status
 
-**Hardware Design Completed**
+## Disclaimer
 
-The current project focuses on the custom ESP32-S3 IoT PCB design.
-
-Future stages include:
-
-- Firmware development
-- PCB fabrication
-- Hardware bring-up
-- Sensor testing
-- Wi-Fi / cloud integration
-- Web dashboard
-- Battery-powered operation
-- OTA firmware updates
-
----
-
-## 👩‍💻 Author
-
-**Saroja Parameshwar Jakkannavar**
-
-Electronics & Communication Engineering
-
-**Interests:** PCB Design • Hardware Design • Power Electronics • SMPS • Embedded Hardware • IoT# ESP32-IoT-Board
+This project is made for educational purpose
